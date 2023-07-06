@@ -1,4 +1,4 @@
-param fileurl string = 'https://raw.githubusercontent.com/ralpje/DemoSite/main/scipt.ps1'
+param fileurl string = 'https://raw.githubusercontent.com/ralpje/DemoSite/main/script.ps1'
 param vmname string
 param location string = 'westeurope'
 resource customscriptextension 'Microsoft.Compute/virtualMachines/extensions@2022-03-01' = {
