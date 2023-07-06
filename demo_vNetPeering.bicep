@@ -47,6 +47,7 @@ module VM_A_1 'Modules/windowsVm.bicep' = {
 // Extension for VM_A_!
 module vmExtension 'Modules/extension.bicep' = {
   name: 'vmExtension'
+  dependsOn: [VM_A_1]
   params: {
     vmname: 'VM-A-1'
     location: location
