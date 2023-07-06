@@ -44,6 +44,15 @@ module VM_A_1 'Modules/windowsVm.bicep' = {
   
 }
 
+// Extension for VM_A_!
+module vmExtension 'Modules/extension.bicep' = {
+  name: 'vmExtension'
+  params: {
+    vmname: 'VM-A-1'
+    location: location
+  }
+}
+
 // VM in vNet-A, secondary subnet
 module VM_A_2 'Modules/windowsVm.bicep' ={
   name: 'VM-A-2'
